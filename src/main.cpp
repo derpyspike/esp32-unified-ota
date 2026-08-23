@@ -32,9 +32,9 @@ extern "C" void app_main(void) {
     nvs_init_custom("MeshtasticOTA");
     
     const esp_app_desc_t *app_desc = esp_app_get_description();
-    INFO("\n\n//\\ E S H T /\\ S T / C\n\n");
+    INFO("\n\n Custom ESP32 combined BLE/WiFiOTA\n\n");
     // This will print "MeshtasticOTA" or "MeshtasticOTA-WiFi" based on CMake logic
-    printf("OTA Loader v%s (%s)\r\n", app_desc->version, app_desc->project_name); 
+    printf("OTA Loader v%s (%s)\r\n", app_desc->version, "Github: derpyspike/esp32-unified-ota"); 
     printf("Compiled on: %s %s\r\n", app_desc->date, app_desc->time);
     
     nvs_config_t config;
